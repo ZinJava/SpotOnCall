@@ -44,4 +44,4 @@ async def nowplaying(interaction: discord.Interaction):
     song_info = get_current_track()
     await interaction.followup.send(song_info)
 
-bot.run(os.getenv('BOT_SECRET'))
+bot.run(os.getenv('DISCORD_BOT_SECRET'))
